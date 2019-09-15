@@ -1,0 +1,23 @@
+package day4;/* *
+@author Lea
+@date 2019/9/6
+*/
+class Student{
+    public void read(){
+        System.out.println("未使用this:");
+        book();
+        System.out.println("使用this：");
+        this.book();
+    }
+    public void book(){
+        System.out.println("read book");
+    }
+}
+public class Exercise5_8 {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.read();
+    }
+
+}
+
